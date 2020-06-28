@@ -22,15 +22,15 @@ export default {
   .nav-bar {
     display: flex;
     line-height: 44px;
+    box-shadow: 0 1px 1px rgba(100, 100, 100, 0.1);
   }
 
   .left, .right {
     width: 60px;
-    background-color: bisque;
   }
 
   .center {
     flex: 1;
-    background-color: aquamarine;
+    text-align: center;
   }
 </style>
