@@ -11,41 +11,42 @@ new Vue({
   router
 }).$mount('#app')
 
-// request({
-//   url: "home/multidata"
-// }, res => {
-//   console.log(0 ,res);
-// }, err => {
-//   console.log(0, err);
-// })
 
-// import {request1} from 'network/request'
+request({
+  url: "home/multidata"
+}, res => {
+  console.log(0 ,res);
+}, err => {
+  console.log(0, err);
+})
 
-// request1({
-//   baseConfig: {
-//     url: "home/multidata"
-//   },
-//   success: res => {
-//     console.log(1, res)
-//   },
-//   failure: err => {
-//     console.log(1, err)
-//   }
-// })
+import {request1} from 'network/request'
 
-// // 最终方案1
+request1({
+  baseConfig: {
+    url: "home/multidata"
+  },
+  success: res => {
+    console.log(1, res)
+  },
+  failure: err => {
+    console.log(1, err)
+  }
+})
 
-// import { request2 } from 'network/request'
+// 最终方案1
 
-// request2({
-//   url: "home/multidata"
-// }).then(res => {
-//   console.log(2, res)
-// }).catch(err => {
-//   console.log(2, err)
-// })
+import { request2 } from 'network/request'
 
-// 真最终方案
+request2({
+  url: "home/multidata"
+}).then(res => {
+  console.log(2, res)
+}).catch(err => {
+  console.log(2, err)
+})
+
+真最终方案
 
 import { request3 } from 'network/request'
 
